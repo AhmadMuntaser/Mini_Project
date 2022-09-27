@@ -1,0 +1,233 @@
+<html>
+
+<head><title> </title>
+
+<style>
+
+#logo{
+
+margin-left:70px;
+}
+
+#email{
+
+float:right;
+list-style-type:none;
+font-size:20px;
+margin-right:55px;
+}
+
+#email a{
+text-decoration:none;
+
+}
+
+#menu{
+list-style-type:none;
+text-decoration:none;
+
+}
+
+#menu li{
+display:inline-block;
+margin-top:13px;
+
+}
+
+#borderr{
+background-color:rgb(51,51,51);
+ height:50px;
+ border:1px;
+ solid rgb(51,51,51);
+ border-radius:5px;
+}
+
+#menu a{
+text-decoration:none;
+color:white;
+opacity:0.9;
+padding-left:140px;
+padding-right:140px;
+font-size:20px;
+font-family:Monospace;
+}
+
+#menu a:hover{
+color:orange;
+background-color:rgb(69,69,69);
+padding-top:11px;
+padding-bottom:13px;
+}
+
+#active a{
+
+background-color:rgb(69,69,69);
+padding-top:11px;
+padding-bottom:11px;
+color:orange;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=password],
+select,
+textarea,
+input[type=email],
+input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+  width:80%;
+  max-width:800px;
+  margin:0 auto;
+}
+
+.flex-row{
+  display:flex;
+  justify-content:space-between;
+  align-content:center;
+  align-items:strech;
+  line-height:45px;
+}
+.flex-row input,
+.flex-row textarea,
+.flex-row select{
+  margin:5px;
+}
+
+input[type=submit]{
+margin:5px auto;
+}
+input[type=reset]{
+margin:5px auto;
+
+}
+.flex-row input:nth-child(3){
+  flex-basis:150px;
+}
+
+</style>
+<script>
+
+
+</script>
+
+
+ </head>
+
+<body>
+
+<div style="background-image:url(box1.png); border:1px soild rgb(236,236,236);border-radius:5px;">
+
+<img id="logo" src="OIP.jfif" alt="big ben logo" width="200px" height="150px;"> 
+
+<ul id="email">
+
+<li>Call US:<a href="tel:079...">+962 796... </a> </li><br>
+<li>Email:<a href="mailto:ahmad_muntaser@hotmail">ahmad_muntaser@hotmail.com </a> </li>
+
+</ul>
+
+</div>
+
+<div id="borderr">
+
+<ul id="menu">
+
+<li><a  href="home.html">HOME </a> </li>
+<li id="active" ><a href="about.html">ABOUT </a></li>
+<li><a href="services.html">SERVICES </a> </li>
+<li><a href="gallery.html">GALLERY </a> </li>
+</ul>
+</div>
+
+<div style="background-color:rgb(236,236,236); margin-top:30px; ">
+
+<div class="container">
+  <form action="saveform.php" method="post">
+    <div class="flex-row">
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      <input  type="email" id="email" name="email" placeholder="Email Address" required>
+      <input type="number" id="age" name="age" placeholder="Age" required>
+    </div>
+    <div class="flex-row">
+      <input type="password" id="password" name="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
+      <select type="dropdown" name="contact" required>
+        <option placeholder="australia" >Jordan</option>
+        <option value="canada">Lebanon</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+    <div class="flex-row">
+     <textarea id="message" name="message" placeholder="Talk To Us" style="height:200px"></textarea>
+    </div>
+	<div style="margin-left:300px;">
+    <input type="submit" value="Submit">
+	<input type="reset" value="Clear" > 
+</div> 
+ </form>
+</div>
+</div>
+
+<footer>
+<div style="background-image:url(box1.png); margin-top:-15px;">
+<div style="margin-left:680px; padding-top:30px;">
+<a style="margin-left:30px ; font-size:25px"; href = "start.html">Go back to Start</a>
+<p id="footer">&copy; HOTEL BIG BEN 2018 <p>
+
+</div>
+</div>
+
+
+<audio autoplay loop>
+  <source src="start.mpeg" type="audio/mpeg">
+</audio>
+
+
+
+</footer>
+
+</body>
+
+
+</html>

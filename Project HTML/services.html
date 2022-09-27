@@ -1,0 +1,193 @@
+<!DOCTYOE html>
+
+<html>
+
+<head><title> </title>
+
+<style>
+
+#logo{
+
+margin-left:70px;
+}
+
+#email{
+
+float:right;
+list-style-type:none;
+font-size:20px;
+margin-right:55px;
+}
+
+#email a{
+text-decoration:none;
+
+}
+
+#menu{
+list-style-type:none;
+text-decoration:none;
+
+}
+
+#menu li{
+display:inline-block;
+margin-top:13px;
+
+}
+
+#borderr{
+background-color:rgb(51,51,51);
+ height:50px;
+ border:1px;
+ solid rgb(51,51,51);
+ border-radius:5px;
+}
+
+#menu a{
+text-decoration:none;
+color:white;
+opacity:0.9;
+padding-left:140px;
+padding-right:140px;
+font-size:20px;
+font-family:Monospace;
+}
+
+#menu a:hover{
+color:orange;
+background-color:rgb(69,69,69);
+padding-top:11px;
+padding-bottom:13px;
+}
+
+#active a{
+
+background-color:rgb(69,69,69);
+padding-top:11px;
+padding-bottom:11px;
+color:orange;
+}
+
+#more {display: none;}
+
+
+li{
+font-size:20px;
+
+
+}
+
+</style>
+
+<script>
+
+function functionn(a,b,c) {
+  var dots = document.getElementById(a);
+  var moreText = document.getElementById(b);
+  var btnText = document.getElementById(c);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+ </head>
+
+<body>
+
+<div style="background-image:url(box1.png); border:1px soild rgb(236,236,236);border-radius:5px;">
+
+<img id="logo" src="OIP.jfif" alt="big ben logo" width="200px" height="150px;"> 
+
+<ul id="email">
+
+<li>Call US:<a href="tel:0791508371">0791508371 </a> </li><br>
+<li>Email:<a href="mailto:has20180959@std.psut.edu.jo">has20180959 </a> </li>
+
+</ul>
+
+</div>
+
+<div id="borderr">
+
+<ul id="menu">
+
+<li><a  href="home.html">HOME </a> </li>
+<li><a href="about.html">ABOUT </a></li>
+<li id="active" ><a href="services.html">SERVICES </a> </li>
+<li><a href="gallery.html">GALLERY </a> </li>
+</ul>
+</div>
+
+<div style="background-color:rgb(237,237,237); margin-top:30px;">
+<div style="margin-left:130px;">
+<p style="font-size:25px; font-family:Sans-serif; margin-left:20px;  padding-top:70px;">OUR HOTEL SERVICES<p>
+<ol>
+<li>CULTURE SHOW </li>
+<p>Over the years,<span id="dots">...</span><span id="more"> Big Ben has become a popular cultural icon in both the United Kingdom and abroad.<br>
+ The ringing of its colossal hour bell has become a familiar sound to the British people,<br>
+ and descriptions have pervaded the literature of such prominent authors as Virginia Woolf.</span> </p>
+
+<button onclick="functionn('dots','more','btn')" id="btn">Read more</button>
+<br><br><br>
+<li>RESTAURANT </li>
+<p>Check out our variety of Soup, Salad,<span id="dots1">...</span><span id="more1"> Sandwiches, Main Course & Deserts.
+ Menu Variety. Fresh Food. Fast Service.<br>
+ Quick Delivery. Sushi, Restaurant & Bar. Breakfast, Lunch & Dinner.<br>
+ Elegant Decor. Dine-In & Takeaway.</span>
+‏ </p>
+<button onclick="functionn('dots1','more1','btn1')" id="btn1">Read more</button>
+<br><br><br>
+<li>CONFERENCE HALL </li>
+<p>69 Meeting Rooms in Amman, Jordan.<span id="dots2">...</span><span id="more2"> Le Grand Amman Managed by AccorHotels.
+ Popular. Hotel . 15 Spaces. Le Grand Amman Managed by AccorHotels.</span>
+ </p>
+ 
+ <button onclick="functionn('dots2','more2','btn2')" id="btn2">Read more</button>
+<br><br><br>
+<li>SPA </li>
+<p>Expand your search. Alf Layla Wa Layla. Amman. 112 reviews.<span id="dots3">...</span><span id="more3"> Gaia's Cocoon Spa. Amman. 48 reviews.<br>
+ Sohum Spa at Crowne Plaza Jordan Dead Sea Resort & Spa.<br>
+ Sweimah. 93 reviews. Zara Spa. Amman. Willow Stream Spa and Fitness Center- Fairmont Amman. Amman. Ma'in Hot Springs</span> </p>
+
+ <button onclick="functionn('dots3','more3','btn3')" id="btn3">Read more</button>
+
+</ol>
+</div>
+</div>
+<footer>
+<div style="background-image:url(box1.png); margin-top:-15px;">
+<div style="margin-left:680px; padding-top:30px;">
+<a style="margin-left:30px ; font-size:25px"; href = "start.html">Go back to Start</a>
+<p id="footer">&copy; HOTEL BIG BEN 2018 <p>
+</div>
+</div>
+
+
+<audio autoplay loop>
+  <source src="start.mpeg" type="audio/mpeg">
+</audio>
+
+
+
+</footer>
+
+
+</div>
+</div>
+
+
+</body>
+
+
+
+</html>

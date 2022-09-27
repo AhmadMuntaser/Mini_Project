@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title> </title>
+
+
+<style>
+
+#logo{
+
+margin-left:70px;
+}
+
+#email{
+
+float:right;
+list-style-type:none;
+font-size:20px;
+margin-right:55px;
+}
+
+#email a{
+text-decoration:none;
+
+}
+
+#menu{
+list-style-type:none;
+text-decoration:none;
+
+}
+
+#menu li{
+display:inline-block;
+margin-top:13px;
+
+}
+
+#borderr{
+background-color:rgb(51,51,51);
+ height:50px;
+ border:1px;
+ solid rgb(51,51,51);
+ border-radius:5px;
+}
+
+#menu a{
+text-decoration:none;
+color:white;
+opacity:0.9;
+padding-left:140px;
+padding-right:140px;
+font-size:20px;
+font-family:Monospace;
+}
+
+#menu a:hover{
+color:orange;
+background-color:rgb(69,69,69);
+padding-top:11px;
+padding-bottom:13px;
+}
+
+#line{
+border:8px solid rgb(70,70,70);
+border-radius:5px;
+}
+
+#active a{
+
+background-color:rgb(69,69,69);
+padding-top:11px;
+padding-bottom:11px;
+color:orange;
+}
+
+.borderr{
+
+border:5px solid white;
+}
+
+.borderr:hover{
+
+border:5px solid lightblue;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+</style>
+
+
+
+
+ </head>
+
+
+<body>
+
+<div style="background-image:url(box1.png); border:1px soild rgb(236,236,236);border-radius:5px;">
+
+<img id="logo" src="OIP.jfif" alt="big ben logo" width="200px" height="150px;"> 
+
+<ul id="email">
+
+<li>Call US:<a href="tel:0791508371">0791508371 </a> </li><br>
+<li>Email:<a href="mailto:has20180959@std.psut.edu.jo">has20180959 </a> </li>
+
+</ul>
+
+</div>
+
+<div id="borderr">
+
+<ul id="menu">
+
+<li><a  href="home.html">HOME </a> </li>
+<li><a href="about.html">ABOUT </a></li>
+<li><a href="services.html">SERVICES </a> </li>
+<li id="active"><a href="gallery.html">GALLERY </a> </li>
+</ul>
+</div>
+<h1 id="line"> </h1>
+
+<div style="background-color:rgb(235,235,235);">
+
+<div style="margin-left:150px; padding-bottom:20px;">
+<br>
+<p style="font-size:25px; font-family:sans-serif;">Gallery </p>
+
+
+<img id="myImg" class="borderr" src="219675416.jpg"  width="25%" height="20%" >
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<img  id="myImg" style="margin-left:100px;" class="borderr" src="219675277.jpg" width="25%" height="20%" >
+
+
+
+<br>
+<img id="myImg" style="margin-top:20px;" class="borderr" src="232407964.jpg" width="25%" height="15%">
+
+<img  id="myImg" style="margin-left:100px;" class="borderr" src="219675267.jpg" width="27%" height="20%"> 
+
+<br>
+
+<img  id="myImg" style="margin-top:20px;" class="borderr" src="219675288.jpg" width="25%" height="20%">
+
+</div>
+
+</div>
+
+
+<footer>
+<div style="background-image:url(box1.png); margin-top:-15px;">
+<div style="margin-left:680px; padding-top:30px;">
+<a style="margin-left:30px ; font-size:25px"; href = "start.html">Go back to Start</a>
+
+<p id="footer">&copy; HOTEL BIG BEN 2018 <p>
+</div>
+</div>
+
+
+<audio autoplay loop>
+  <source src="start.mpeg" type="audio/mpeg">
+</audio>
+
+
+
+</footer>
+
+<script>
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</body>
+
+
+</html>
